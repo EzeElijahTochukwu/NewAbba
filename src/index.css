@@ -1,0 +1,329 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header img {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+header img:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+header nav a:hover {
+  color: #337ab7;
+}
+
+
+
+/* Main Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Services Styles */
+
+.services {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Blog Styles */
+
+.blog {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer img {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+footer img:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+footer a:hover {
+  color: #337ab7;
+}
+
+.copyright {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.copyright p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  header img {
+    height: 4em;
+    padding: 0.5em;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .services {
+    padding: 1rem;
+  }
+
+  .service {
+    padding: 0.5rem;
+  }
+
+  .blog {
+    padding: 1rem;
+  }
+
+  .blog-post {
+    padding: 0.5rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+
+  footer img {
+    height: 4em;
+    padding: 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
+  }
+
+  header {
+    padding: 0.2rem;
+  }
+
+  header img {
+    height: 3em;
+    padding: 0.2em;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+
+  .services {
+    padding: 0.5rem;
+  }
+
+  .service {
+    padding: 0.2rem;
+  }
+
+  .blog {
+    padding: 0.5rem;
+  }
+
+  .blog-post {
+    padding: 0.2rem;
+  }
+
+  footer {
+    padding: 0.2rem;
+  }
+
+  footer img {
+    height: 3em;
+    padding: 0.2em;
+  }
+}
+
+/* Animations */
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 2s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slide-in 2s ease-in-out;
+}
