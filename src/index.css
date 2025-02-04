@@ -147,6 +147,7 @@ main {
 /* Services Styles */
 
 .services {
+  display:grid;
   background-color: #f7f7f7;
   padding: 2rem;
   margin-bottom: 2rem;
