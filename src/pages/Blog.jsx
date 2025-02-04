@@ -44,12 +44,7 @@ const Blog = () => {
           <p>Boost your website traffic with these SEO best practices...</p>
           <a href="/post3" className="read-more">Read More</a>
         </div>
-        <div className="blog-post">
-          <h3>Social Media Marketing Trends in 2025</h3>
-          <p className="meta">Published on January 15, 2025 by SocialPro</p>
-          <p>Stay ahead of the curve with these social media trends...</p>
-          <a href="/post4" className="read-more">Read More</a>
-        </div>
+      
         <div className="blog-post">
           <h3>Creating Engaging Visual Content</h3>
           <p className="meta">Published on January 10, 2025 by DesignExpert</p>
