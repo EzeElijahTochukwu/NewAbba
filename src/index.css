@@ -177,14 +177,23 @@ main {
 
 /* Blog Styles */
 
-/* Base styles for desktop and mobile */
+/* Blog.css */
+.blog {
+  padding: 2rem;
+}
+
+.blog h2 {
+  text-align: center;
+}
+
+/* Horizontal scrolling container */
 .blog-posts {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 1rem;
+  gap: 1rem; /* space between posts */
   padding: 1rem;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
 }
 
 .blog-post {
@@ -194,9 +203,31 @@ main {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  min-width: 300px;
+  min-width: 300px; /* Adjust the width as needed */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.blog-post h3 {
+  margin-top: 0;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Adjustments for mobile views */
 @media (max-width: 600px) {
   .blog-post {
     min-width: 250px; /* Smaller cards on narrow screens */
@@ -207,6 +238,7 @@ main {
     padding: 0.8rem;
   }
 }
+
 
 
 /* Footer Styles */
