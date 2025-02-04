@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <footer id="contact">
       <div className="footer-content">
+        {/* Left Section - Contact Info */}
         <div className="footer-left">
           <h3>Contact Us</h3>
           <p><a href="tel:08127945747"><i className="fas fa-phone"></i> 08127945747</a></p>
@@ -11,8 +12,9 @@ const Footer = () => {
           <p><a href="mailto:info@yesabbawrites.online"><i className="fas fa-envelope"></i> info@yesabbawrites.online</a></p>
           <p><a href="https://ng.linkedin.com/company/yesabba-writes?trk=public_post_feed-actor-name"><i className="fab fa-linkedin"></i> YesAbba Writes</a></p>
         </div>
+
+        {/* Right Section - Navigation Links */}
         <div className="footer-right">
-          <img src="/img/logo.jpg" alt="YesAbba Writes Logo" className="footer-logo" />
           <div className="footer-links">
             <a href="/">Home</a>
             <a href="#services">Services</a>
@@ -22,6 +24,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Logo Centered Below */}
+      <div className="footer-logo-container">
+        <img src="/img/logo.jpg" alt="YesAbba Writes Logo" className="footer-logo" />
+      </div>
+
+      {/* Copyright */}
       <div className="copyright">
         <p>&copy; 2025 YesAbba Writes. All rights reserved.</p>
       </div>
@@ -30,3 +39,4 @@ const Footer = () => {
 };
 
 export default Footer;
+            
