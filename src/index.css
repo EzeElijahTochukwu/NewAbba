@@ -42,10 +42,7 @@ header {
   padding: 20px;
   background-color: #E9DCC9;
   color:#7B3F00;
-    border-top-left-radius: 50%;
- border-top-right-radius: 50%;
- border-bottom-left-radius: 50%;
- border-bottom-right-radius: 50%;
+    border-radius: 30px;
 }
 
 .logo {
