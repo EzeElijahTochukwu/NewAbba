@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import "./index.css";
 
 const Blog = () => {
   const scrollContainerRef = useRef(null);
@@ -60,4 +60,4 @@ const Blog = () => {
 };
 
 export default Blog;
-      
+              
