@@ -177,35 +177,37 @@ main {
 
 /* Blog Styles */
 
-.blog {
-  background-color: #f7f7f7;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 30px 0px 30px 0px
-}
-
-.blog h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* Base styles for desktop and mobile */
+.blog-posts {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .blog-post {
-  background-color: #fff;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-color: #f8f8f8;
   padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 30px 0px 0px 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
+  .blog-post {
+    min-width: 250px; /* Smaller cards on narrow screens */
+    padding: 0.8rem;
+  }
+  .blog-posts {
+    gap: 0.8rem;
+    padding: 0.8rem;
+  }
 }
 
-.blog-post h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.blog-post p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
 
 /* Footer Styles */
 
