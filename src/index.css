@@ -180,6 +180,8 @@ main {
 
 
 /* Blog section styling */
+
+/* Blog Section */
 .blog {
   padding: 2rem;
 }
@@ -196,13 +198,14 @@ main {
   margin: 1rem 0;
 }
 
-/* The inner container that holds our posts and scrolls continuously */
+/* The inner container holds both copies and scrolls continuously */
 .blog-posts {
   display: flex;
-  width: max-content; /* width fits content */
+  /* width set to fit its content so duplication works correctly */
+  width: max-content;
 }
 
-/* Individual blog posts */
+/* Individual blog posts styling */
 .blog-post {
   flex: 0 0 auto;
   background-color: #f8f8f8;
@@ -210,7 +213,7 @@ main {
   margin-right: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  min-width: 300px; /* Adjust width as needed */
+  min-width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -234,13 +237,13 @@ main {
   text-decoration: underline;
 }
 
-/* Adjustments for mobile views */
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .blog-post {
     min-width: 250px;
     padding: 0.8rem;
-    margin-right: 
-0.8rem;
+    margin-right:
+ 0.8rem;
   }
   .blog-scroll-container {
     margin: 0.8rem 0;
