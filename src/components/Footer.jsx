@@ -10,7 +10,6 @@ const Footer = () => {
           <p><a href="tel:07031179735"><i className="fas fa-phone"></i> 07031179735</a></p>
           <p><a href="mailto:info@yesabbawrites.online"><i className="fas fa-envelope"></i> info@yesabbawrites.online</a></p>
           <p><a href="https://ng.linkedin.com/company/yesabba-writes?trk=public_post_feed-actor-name"><i className="fab fa-linkedin"></i> YesAbba Writes</a></p>
-          <p><a href="https://twitter.com/YesAbbawrites" target="_blank"><i className="fab fa-twitter"></i> @YesAbbawrites</a></p>
         </div>
         <div className="footer-right">
           <img src="/img/logo.jpg" alt="YesAbba Writes Logo" className="footer-logo" />
