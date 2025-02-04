@@ -218,6 +218,9 @@ main {
   text-align: left;
   flex: 1;
 }
+.footer-left a{
+  color: #03C03C;
+}
 
 .footer-right {
   text-align: right;
