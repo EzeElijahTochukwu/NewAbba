@@ -206,8 +206,8 @@ main {
 
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Aligns contact left and links right */
-  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Contact on left, links on right */
+  align-items: flex-start; /* Aligns items properly */
   flex-wrap: wrap;
   padding: 1rem;
 }
@@ -224,10 +224,11 @@ main {
 
 .footer-links {
   display: flex;
-  justify-content: flex-end; /* Aligns links to the right */
+  justify-content: flex-end;
   gap: 1rem;
 }
 
+/* Center Logo */
 .footer-logo-container {
   text-align: center;
   margin-top: 1rem;
@@ -245,17 +246,35 @@ main {
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer-content {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  .footer-left, .footer-right {
-    text-align: center;
-    flex: none;
+  .footer-left {
+    flex: 1;
+    text-align: left;
+  }
+
+  .footer-right {
+    flex: 1;
+    text-align: right;
   }
 
   .footer-links {
-    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .footer-links {
+    align-items: flex-end;
   }
 }
 
