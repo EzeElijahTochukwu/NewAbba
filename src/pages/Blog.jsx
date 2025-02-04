@@ -1,4 +1,6 @@
+// Blog.jsx
 import React from "react";
+import "./Blog.css"; // Import the CSS file
 
 const Blog = () => {
   return (
@@ -17,9 +19,11 @@ const Blog = () => {
           <p>Discover why proofreading is essential for professional writing...</p>
           <a href="/post2" className="read-more">Read More</a>
         </div>
+        {/* Add more blog posts here as needed */}
       </div>
     </section>
   );
 };
 
 export default Blog;
+    
