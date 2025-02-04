@@ -19,6 +19,20 @@ const Blog = () => {
           <p>Discover why proofreading is essential for professional writing...</p>
           <a href="/post2" className="read-more">Read More</a>
         </div>
+       </div>
+        <div className="blog-post">
+          <h3>The Importance of Proofreading</h3>
+          <p className="meta">Published on January 25, 2025 by Admin</p>
+          <p>Discover why proofreading is essential for professional writing...</p>
+          <a href="/post2" className="read-more">Read More</a>
+        </div>
+     </div>
+        <div className="blog-post">
+          <h3>The Importance of Proofreading</h3>
+          <p className="meta">Published on January 25, 2025 by Admin</p>
+          <p>Discover why proofreading is essential for professional writing...</p>
+          <a href="/post2" className="read-more">Read More</a>
+        </div>
         {/* Add more blog posts here as needed */}
       </div>
     </section>
