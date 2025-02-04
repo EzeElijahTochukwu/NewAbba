@@ -176,35 +176,34 @@ main {
   margin-bottom: 1rem;
 }
 
-/* Blog Styles */
-
-  /* Global styles to prevent horizontal page scroll */
 
 
-/* Blog.css */
+/* Blog section styling */
 .blog {
+  position: relative;
   padding: 2rem;
-}
-
-.blog h2 {
   text-align: center;
 }
 
-/* This container is scrollable on its own */
+/* Scrollable blog container */
 .blog-posts {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 1rem;
   padding: 1rem;
-  -webkit-overflow-scrolling: touch;
-  
-  /* Ensure the container doesn't exceed the viewport width */
+  -webkit-overflow-scrolling: touch; /* Enables smooth touch scrolling */
   max-width: 100%;
   box-sizing: border-box;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
 }
 
-/* Individual blog posts */
+/* Hide default scrollbar in Webkit browsers */
+.blog-posts::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual blog post cards */
 .blog-post {
   flex: 0 0 auto;
   scroll-snap-align: start;
@@ -216,27 +215,40 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.blog-post h3 {
-  margin-top: 0;
+/* Scroll buttons styling */
+.scroll-buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.meta {
-  font-size: 0.9rem;
-  color: #777;
+.scroll-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.read-more {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #007bff;
-  text-decoration: none;
+.scroll-btn.left {
+  left: 10px;
 }
 
-.read-more:hover {
-  text-decoration: underline;
+.scroll-btn.right {
+  right: 10px;
 }
 
-/* Adjustments for mobile views */
+.scroll-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
   .blog-post {
     min-width: 250px;
@@ -247,6 +259,7 @@ main {
     padding: 0.8rem;
   }
 }
+
 
 
 
