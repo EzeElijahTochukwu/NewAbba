@@ -1,6 +1,6 @@
 // Blog.jsx
 import React from "react";
-import "./Blog.css"; // Make sure your CSS file includes the horizontal slider styles
+ // Make sure your CSS file includes the horizontal slider styles
 
 const Blog = () => {
   return (
