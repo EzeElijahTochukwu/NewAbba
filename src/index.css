@@ -258,6 +258,9 @@ main {
 .footer-logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+.copyright{
+color:#7B3F00;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
