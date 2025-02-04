@@ -153,8 +153,8 @@ main {
 /* Footer Styles */
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #E9DCC9;
+  color: #7B3F00;
   padding: 1rem;
   text-align: center;
 }
@@ -181,7 +181,7 @@ footer p {
 }
 
 footer a {
-  color: #fff;
+  color: #03C03C;
   margin-right: 1rem;
 }
 
