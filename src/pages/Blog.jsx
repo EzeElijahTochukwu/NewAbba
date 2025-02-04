@@ -1,92 +1,56 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import "./Blog.css";
 
 const Blog = () => {
   const scrollContainerRef = useRef(null);
+  const [scrollDirection, setScrollDirection] = useState(1); // 1 for right, -1 for left
 
-  // Your blog posts data
   const posts = [
-    {
-      title: "10 Tips for Effective Content Writing",
-      meta: "Published on January 28, 2025 by Admin",
-      excerpt: "Learn how to create engaging and impactful content...",
-      link: "/post1",
-    },
-    {
-      title: "The Importance of Proofreading",
-      meta: "Published on January 25, 2025 by Admin",
-      excerpt: "Discover why proofreading is essential for professional writing...",
-      link: "/post2",
-    },
-    {
-      title: "How to Improve Your SEO Strategy",
-      meta: "Published on January 20, 2025 by SEO Guru",
-      excerpt: "Boost your website traffic with these SEO best practices...",
-      link: "/post3",
-    },
-    {
-      title: "Social Media Marketing Trends in 2025",
-      meta: "Published on January 15, 2025 by SocialPro",
-      excerpt: "Stay ahead of the curve with these social media trends...",
-      link: "/post4",
-    },
-    {
-      title: "Creating Engaging Visual Content",
-      meta: "Published on January 10, 2025 by DesignExpert",
-      excerpt: "Visuals are key! Discover how to create compelling graphics...",
-      link: "/post5",
-    },
+    { title: "10 Tips for Effective Content Writing", meta: "Published on Jan 28, 2025", excerpt: "Learn how to create engaging and impactful content...", link: "/post1" },
+    { title: "The Importance of Proofreading", meta: "Published on Jan 25, 2025", excerpt: "Discover why proofreading is essential for professional writing...", link: "/post2" },
+    { title: "How to Improve Your SEO Strategy", meta: "Published on Jan 20, 2025", excerpt: "Boost your website traffic with these SEO best practices...", link: "/post3" },
+    { title: "Social Media Marketing Trends in 2025", meta: "Published on Jan 15, 2025", excerpt: "Stay ahead of the curve with these social media trends...", link: "/post4" },
+    { title: "Creating Engaging Visual Content", meta: "Published on Jan 10, 2025", excerpt: "Visuals are key! Discover how to create compelling graphics...", link: "/post5" },
   ];
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
-    if (!scrollContainer) return; // Ensure the ref exists
+    if (!scrollContainer) return;
 
-    let scrollSpeed = 1; // pixels to move per frame (adjust as needed)
-    let animationFrameId;
+    let scrollSpeed = 1; // Pixels per interval
+    let intervalDelay = 20; // ms between scroll updates
 
-    const step = () => {
-      // Reset scroll when half the content has been scrolled (first set)
-      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-        scrollContainer.scrollLeft = 0;
-      } else {
-        scrollContainer.scrollLeft += scrollSpeed;
+    const intervalId = setInterval(() => {
+      if (scrollContainer.scrollLeft <= 0) {
+        setScrollDirection(1); // Change direction to right
+      } else if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
+        setScrollDirection(-1); // Change direction to left
       }
-      animationFrameId = requestAnimationFrame(step);
-    };
+      scrollContainer.scrollLeft += scrollSpeed * scrollDirection;
+    }, intervalDelay);
 
-    // Start the animation loop
-    animationFrameId = requestAnimationFrame(step);
-
-    // Cleanup on unmount
-    return () => cancelAnimationFrame(animationFrameId);
-  }, []);
+    return () => clearInterval(intervalId);
+  }, [scrollDirection]);
 
   return (
     <section id="blog" className="blog">
       <h2>Blog</h2>
-      {/* This container clips any overflow */}
       <div className="blog-scroll-container" ref={scrollContainerRef}>
         <div className="blog-posts">
-          {/* First copy of posts */}
           {posts.map((post, index) => (
-            <div className="blog-post" key={`post-${index}`}>
+            <div className="blog-post" key={index}>
               <h3>{post.title}</h3>
               <p className="meta">{post.meta}</p>
               <p>{post.excerpt}</p>
-              <a href={post.link} className="read-more">
-                Read More
-              </a>
+              <a href={post.link} className="read-more">Read More</a>
             </div>
           ))}
-          {/* Duplicate copy of posts for continuous scroll */}
-          {posts.map((post, index) => (
+          {posts.map((post, index) => ( // Duplicate for smooth looping
             <div className="blog-post" key={`dup-${index}`}>
               <h3>{post.title}</h3>
               <p className="meta">{post.meta}</p>
               <p>{post.excerpt}</p>
-              <a href={post.link} className="read-more">
-                Read More
-              </a>
+              <a href={post.link} className="read-more">Read More</a>
             </div>
           ))}
         </div>
