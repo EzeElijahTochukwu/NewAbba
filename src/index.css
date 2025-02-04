@@ -183,6 +183,10 @@ main {
 
 /* Blog Section */
 .blog {
+
+
+/* Blog Section */
+.blog {
   padding: 2rem;
 }
 
@@ -190,22 +194,21 @@ main {
   text-align: center;
 }
 
-/* Container that clips the overflowing content */
+/* Scroll container: hides overflow */
 .blog-scroll-container {
   overflow: hidden;
-  max-width: 100%;
-  box-sizing: border-box;
+  width: 100%;
+  white-space: nowrap;
   margin: 1rem 0;
 }
 
-/* The inner container holds both copies and scrolls continuously */
+/* Blog posts flex container */
 .blog-posts {
   display: flex;
-  /* width set to fit its content so duplication works correctly */
   width: max-content;
 }
 
-/* Individual blog posts styling */
+/* Individual blog post styles */
 .blog-post {
   flex: 0 0 auto;
   background-color: #f8f8f8;
@@ -215,6 +218,7 @@ main {
   border-radius: 8px;
   min-width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .blog-post h3 {
@@ -237,16 +241,13 @@ main {
   text-decoration: underline;
 }
 
-/* Mobile adjustments */
+/* Mobile styles */
 @media (max-width: 600px) {
   .blog-post {
-    min-width: 250px;
+    min-wi
+dth: 250px;
     padding: 0.8rem;
-    margin-right:
- 0.8rem;
-  }
-  .blog-scroll-container {
-    margin: 0.8rem 0;
+    margin-right: 0.8rem;
   }
 }
 
