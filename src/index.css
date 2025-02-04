@@ -144,10 +144,10 @@ main {
   padding: 2rem;
 }
 
-/* Services Styles */
-
 .services {
-  display:grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a responsive grid with a minimum column width of 250px */
+  gap: 1.5rem; /* Add space between the grid items */
   background-color: #f7f7f7;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -157,12 +157,12 @@ main {
 .services h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center; /* Center the heading */
 }
 
 .service {
   background-color: #fff;
   padding: 1rem;
-  margin-bottom: 1rem;
   border-radius: 0px 30px 30px 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -176,6 +176,7 @@ main {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 
 
 
