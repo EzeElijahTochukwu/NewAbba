@@ -81,6 +81,7 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  justify-content:center;
 }
 
 .hamburger-menu span {
