@@ -210,6 +210,8 @@ main {
   align-items: flex-start; /* Aligns items properly */
   flex-wrap: wrap;
   padding: 1rem;
+  color:#7B3F00;
+  background-color: #E9DCC9;
 }
 
 .footer-left {
@@ -224,8 +226,9 @@ main {
 
 .footer-links {
   display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
 }
 
 /* Center Logo */
