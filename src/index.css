@@ -191,10 +191,13 @@ main {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 1rem; /* space between posts */
+  gap: 1rem;
   padding: 1rem;
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable; /* Modern browsers reserve space */
+  padding-bottom: 1rem; /* Fallback extra space */
 }
+
 
 .blog-post {
   flex: 0 0 auto;
