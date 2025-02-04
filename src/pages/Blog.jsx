@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
 
-
 const Blog = () => {
   const scrollContainerRef = useRef(null);
 
-  // Array of blog posts (adjust as needed)
+  // Your blog posts data
   const posts = [
     {
       title: "10 Tips for Effective Content Writing",
@@ -40,11 +39,13 @@ const Blog = () => {
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
-    let scrollSpeed = 1; // pixels to scroll per frame (adjust for faster/slower)
+    if (!scrollContainer) return; // Ensure the ref exists
+
+    let scrollSpeed = 1; // pixels to move per frame (adjust as needed)
     let animationFrameId;
 
     const step = () => {
-      // When we've scrolled through the first copy, reset to 0
+      // Reset scroll when half the content has been scrolled (first set)
       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
         scrollContainer.scrollLeft = 0;
       } else {
@@ -53,20 +54,22 @@ const Blog = () => {
       animationFrameId = requestAnimationFrame(step);
     };
 
+    // Start the animation loop
     animationFrameId = requestAnimationFrame(step);
 
+    // Cleanup on unmount
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   return (
     <section id="blog" className="blog">
       <h2>Blog</h2>
-      {/* This container clips overflow so the auto-scroll is only visible inside */}
+      {/* This container clips any overflow */}
       <div className="blog-scroll-container" ref={scrollContainerRef}>
         <div className="blog-posts">
-          {/* Render the posts once... */}
+          {/* First copy of posts */}
           {posts.map((post, index) => (
-            <div className="blog-post" key={index}>
+            <div className="blog-post" key={`post-${index}`}>
               <h3>{post.title}</h3>
               <p className="meta">{post.meta}</p>
               <p>{post.excerpt}</p>
@@ -75,7 +78,7 @@ const Blog = () => {
               </a>
             </div>
           ))}
-          {/* ...and then duplicate them for seamless scrolling */}
+          {/* Duplicate copy of posts for continuous scroll */}
           {posts.map((post, index) => (
             <div className="blog-post" key={`dup-${index}`}>
               <h3>{post.title}</h3>
@@ -93,4 +96,4 @@ const Blog = () => {
 };
 
 export default Blog;
- 
+      
