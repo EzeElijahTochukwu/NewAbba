@@ -1,6 +1,6 @@
 // Blog.jsx
 import React from "react";
-import "./Blog.css"; // Import the CSS file
+ // Import the CSS file
 
 const Blog = () => {
   return (
