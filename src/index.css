@@ -178,10 +178,10 @@ main {
 
 /* Blog Styles */
 
-/* Prevent the whole page from horizontal scrolling */
+  /* Global styles to prevent horizontal page scroll */
 
 
-/* Blog Section */
+/* Blog.css */
 .blog {
   padding: 2rem;
 }
@@ -190,31 +190,30 @@ main {
   text-align: center;
 }
 
-/* Scroll container: hides overflow */
-.blog-scroll-container {
-  overflow: hidden;
-  width: 100%;
-  white-space: nowrap;
-  margin: 1rem 0;
-}
-
-/* Blog posts flex container */
+/* This container is scrollable on its own */
 .blog-posts {
   display: flex;
-  width: max-content;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+  
+  /* Ensure the container doesn't exceed the viewport width */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-/* Individual blog post styles */
+/* Individual blog posts */
 .blog-post {
   flex: 0 0 auto;
+  scroll-snap-align: start;
   background-color: #f8f8f8;
   padding: 1rem;
-  margin-right: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   min-width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
 }
 
 .blog-post h3 {
@@ -237,18 +236,18 @@ main {
   text-decoration: underline;
 }
 
-/* Mobile styles */
+/* Adjustments for mobile views */
 @media (max-width: 600px) {
   .blog-post {
     min-width: 250px;
     padding: 0.8rem;
-    margin-right: 0.8rem;
   }
+  .blog-posts {
+    gap: 0.8rem;
+    padding: 0.8rem;
   }
-  
+}
 
-
-/* Mobile styles */
 
 
 
