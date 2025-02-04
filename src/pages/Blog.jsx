@@ -1,12 +1,31 @@
-// Blog.jsx
-import React from "react";
+import React, { useRef } from "react";
 
 
 const Blog = () => {
+  const scrollRef = useRef(null);
+
+  // Scroll left
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
+
+  // Scroll right
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="blog" className="blog">
       <h2>Blog</h2>
-      <div className="blog-posts">
+      <div className="scroll-buttons">
+        <button onClick={scrollLeft} className="scroll-btn left">‹</button>
+        <button onClick={scrollRight} className="scroll-btn right">›</button>
+      </div>
+      <div className="blog-posts" ref={scrollRef}>
         <div className="blog-post">
           <h3>10 Tips for Effective Content Writing</h3>
           <p className="meta">Published on January 28, 2025 by Admin</p>
@@ -43,3 +62,4 @@ const Blog = () => {
 };
 
 export default Blog;
+            
