@@ -178,10 +178,8 @@ main {
 
 /* Blog Styles */
 
+/* Prevent the whole page from horizontal scrolling */
 
-/* Blog section styling */
-
-/* Blog Section */
 
 /* Blog Section */
 .blog {
@@ -242,12 +240,16 @@ main {
 /* Mobile styles */
 @media (max-width: 600px) {
   .blog-post {
-    min-wi
-dth: 250px;
+    min-width: 250px;
     padding: 0.8rem;
     margin-right: 0.8rem;
   }
-}
+  }
+  
+
+
+/* Mobile styles */
+
 
 
 /* Footer Styles */
