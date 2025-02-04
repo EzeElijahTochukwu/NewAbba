@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Blog.css";
+
 
 const Blog = () => {
   const scrollContainerRef = useRef(null);
