@@ -10,7 +10,7 @@ body {
   font-family: American Typewriter, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #ddd6ce
+  background-color: #ddd6ce;
 }
 
 a {
@@ -41,7 +41,7 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #E9DCC9;
-  color:#7B3F00
+  color:#7B3F00;
 }
 
 .logo {
