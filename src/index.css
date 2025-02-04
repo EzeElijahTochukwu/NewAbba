@@ -231,7 +231,9 @@ main {
   gap: 0.5rem;
   color:#03C03C;
 }
-
+.footer-links a{
+  color: #03C03C;
+}
 /* Center Logo */
 .footer-logo-container {
   text-align: center;
