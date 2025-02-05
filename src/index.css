@@ -143,8 +143,7 @@ main {
   align-items: center;
   padding: 2rem;
 }
-
-/* Container for the whole services section */
+/* Updated CSS */
 .services {
   background-color: #f7f7f7;
   padding: 2rem;
@@ -152,43 +151,51 @@ main {
   border-radius: 5px 20px 5px;
 }
 
-/* Our Services heading */
 .services h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-/* Grid container for service items */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates as many columns as will fit with a minimum width of 200px */
   gap: 1rem;
+  grid-template-columns: 1fr; /* Default to 1 column on mobile */
 }
 
-/* For very small screens, force a two-column layout */
-@media (max-width: 480px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Individual service item */
 .service {
-  display:grid;
   background-color: #fff;
   padding: 1rem;
   border-radius: 0px 30px 30px 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Service title */
+/* Tablet view (2 columns) */
+@media (min-width: 480px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small desktop view (3 columns) */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Larger screens (3 columns with wider spacing) */
+@media (min-width: 1024px) {
+  .services-grid {
+    gap: 2rem;
+  }
+}
+
 .service h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-/* Service description */
 .service p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
