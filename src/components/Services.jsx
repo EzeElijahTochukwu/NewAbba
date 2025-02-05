@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <h2>Our Services</h2>
-      <div className="service-container">
+      <div className="services-grid">
         <div className="service">
           <h3>Content Writing</h3>
           <p>Professional content creation tailored to your needs.</p>
