@@ -30,12 +30,13 @@ const Footer = () => {
       {/* Logo Centered Below */}
       <div className="footer-logo-container">
         <img src="/img/logo.jpg" alt="YesAbba Writes Logo" className="footer-logo" />
+        <div className="copyright">
+        <p>&copy; 2025 YesAbba Writes. All rights reserved.</p>
+      </div>
       </div>
 
       {/* Copyright */}
-      <div className="copyright">
-        <p>&copy; 2025 YesAbba Writes. All rights reserved.</p>
-      </div>
+      
     </footer>
   );
 };
