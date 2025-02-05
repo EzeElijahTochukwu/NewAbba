@@ -241,7 +241,7 @@ main {
   max-width: 400px;
   margin: 20px auto;
   padding: 20px;
-  background: #f9f9f9;
+  background: #ddd6ce;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -278,8 +278,8 @@ textarea {
 button {
   width: 100%;
   padding: 12px;
-  background: #007bff;
-  color: white;
+  background: #ddd6ce;
+  color: #7B3F00;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -288,7 +288,7 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background: #ddd6ce;
 }
 
 /* Responsive Styles */
