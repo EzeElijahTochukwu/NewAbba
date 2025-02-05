@@ -26,7 +26,7 @@ const Services = () => {
         <div className="service">
           <h3>Digital Marketing</h3>
           <p>
-            We implement strategic digital marketing efforts that boost online presence and expand reach.
+            We implement SEO-driven strategies to enhance search rankings, increase organic traffic, and improve online visibility.
           </p>
         </div>
         <div className="service">
