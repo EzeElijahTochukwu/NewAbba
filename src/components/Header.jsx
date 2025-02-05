@@ -1,4 +1,6 @@
-import React from 'react';
+// src/components/Header.jsx
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,11 +10,11 @@ const Header = () => {
       <p>Where creativity meets purpose...</p>
       <nav>
         <div className="nav-links">
-          <a href="/">Home</a>
-          <a href="#services">Our Services</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="/blog">Blog</a>
-          <a href="#contact">Contact Us</a>
+          <Link to="/">Home</Link>
+          <Link to="/services">Our Services</Link>
+          <Link to="/testimonials">Testimonials</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
       </nav>
     </header>
