@@ -8,7 +8,7 @@ const Services = () => {
         <div className="service">
           <h3>Content Writing</h3>
           <p>
-            We refine our content creation process to produce polished, professional pieces that reflect collective vision.
+            We refine content creation process to produce polished, professional pieces that reflect collective vision.
           </p>
         </div>
         <div className="service">
