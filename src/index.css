@@ -74,6 +74,7 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: #03C03C;
+  font-weight: bold; 
 }
 
 /* Responsive styles */
