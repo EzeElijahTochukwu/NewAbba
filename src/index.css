@@ -294,6 +294,7 @@ main {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .copyright{
+  align-items:center;
 color:#7B3F00;
 }
 
