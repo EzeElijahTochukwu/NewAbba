@@ -146,8 +146,8 @@ main {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a responsive grid with a minimum column width of 250px */
-  gap: 1.5rem; /* Add space between the grid items */
+  grid-template-columns: 1fr; /* Ensure the heading takes full width */
+  gap: 1.5rem; /* Space between items */
   background-color: #f7f7f7;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -158,6 +158,13 @@ main {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center; /* Center the heading */
+  grid-column: 1 / -1; /* Make the heading span the entire width */
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between service items */
 }
 
 .service {
@@ -175,6 +182,17 @@ main {
 .service p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .service-container {
+    grid-template-columns: 1fr; /* Stack services on small screens */
+  }
+
+  .service {
+    border-radius: 10px; /* Softer corners for mobile */
+  }
 }
 
 
