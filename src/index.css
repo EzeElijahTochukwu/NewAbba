@@ -343,7 +343,7 @@ button:hover {
   display: flex;
   flex-direction: column; /* Stack links vertically */
   align-items: flex-end;
-  gap: 1rem;
+  gap: 0.7rem;
 }
 .footer-links a{
   color:#03C03C;
