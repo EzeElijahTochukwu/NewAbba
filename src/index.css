@@ -110,37 +110,7 @@ main {
 /* Container for the whole services section */
 /* Container for the whole services section */
 /* Container for the services section as a grid */
-.services {
-  padding: 40px 20px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
-  gap: 20px; /* Space between grid items */
-}
 
-/* For mobile screens, use two columns */
-@media (max-width: 768px) {
-  .services {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Individual service box */
-.service {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Removing fixed width so the box adapts to its content and grid cell */
-}
-
-/* Hover effect for service box */
-.service:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
 
   
   /* Remove the fixed aspect ratio so the box adapts to its content */
