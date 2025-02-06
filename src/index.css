@@ -107,6 +107,7 @@ main {
 
 /* Container for the whole services section */
 /* Container for the whole services section */
+/* Container for the whole services section */
 .services {
   background-color: #f7f7f7;
   padding: 2rem;
@@ -135,12 +136,22 @@ main {
   }
 }
 
-/* Individual service item */
+/* Individual service item styled as a square box */
 .service {
   background-color: #fff;
   padding: 1rem;
   border-radius: 0px 30px 30px 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  /* Make the box square */
+  aspect-ratio: 1 / 1;
+  
+  /* Center content inside the square */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Service title */
@@ -154,6 +165,7 @@ main {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 
 
 /* Blog Styles */
