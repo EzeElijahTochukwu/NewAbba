@@ -243,6 +243,9 @@ main {
   flex: 1;
   
 }
+.footer-left h3{
+  color:#03C03C; 
+}
 
 /* Nav links are vertical on all screen sizes */
 .footer-links {
