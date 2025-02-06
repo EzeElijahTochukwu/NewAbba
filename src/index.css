@@ -144,6 +144,7 @@ main {
 }
 
 /* Container for the whole services section */
+/* Container for the whole services section */
 .services {
   background-color: #f7f7f7;
   padding: 2rem;
@@ -161,12 +162,12 @@ main {
 /* Grid container for service items */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates as many columns as will fit with a minimum width of 200px */
+  grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
   gap: 1rem;
 }
 
-/* For very small screens, force a two-column layout */
-@media (max-width: 480px) {
+/* Mobile: Two columns for screens smaller than 768px */
+@media (max-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -191,6 +192,7 @@ main {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 
 /* Blog Styles */
 
