@@ -205,52 +205,63 @@ main {
 
 /* Footer Styles */
 
-footer {
-  background-color: #E9DCC9;
-  color: #7B3F00;
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Contact on left, links on right */
+  align-items: flex-start;
+  flex-wrap: wrap;
   padding: 1rem;
-  text-align: center;
 }
 
-footer img {
+.footer-left {
+  text-align: left;
+  flex: 1;
+}
+
+.footer-right {
+  text-align: right;
+  flex: 1;
+}
+
+/* Nav links are vertical on all screen sizes */
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+/* Center Logo */
+.footer-logo-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-logo {
   height: 6em;
-  padding: 1.5em;
-  will-change: filter;
   transition: filter 300ms;
 }
 
-footer img:hover {
+.footer-logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-footer h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
+/* Responsive Design (if needed adjustments for very small screens) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer-left {
+    text-align: left;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  }
 
-footer p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-footer a {
-  color: #03C03C;
-  margin-right: 1rem;
-}
-
-footer a:hover {
-  color: #337ab7;
-}
-
-.copyright {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.copyright p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
 /* Responsive Design */
 
 @media (max-width: 768px) {
