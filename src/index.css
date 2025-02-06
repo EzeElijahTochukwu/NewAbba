@@ -108,11 +108,13 @@ main {
 /* Container for the whole services section */
 /* Container for the whole services section */
 /* Container for the whole services section */
+/* Container for the whole services section */
 .services {
   background-color: #f7f7f7;
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   border-radius: 5px 20px 5px;
+  max-width: 1200px; /* Limits the width on large screens */
 }
 
 /* Our Services heading */
@@ -129,24 +131,24 @@ main {
   gap: 1rem;
 }
 
-/* Mobile: Two columns for screens smaller than 768px */
+/* For mobile screens, use two columns */
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Individual service item styled as a square box */
+/* Individual service item as an adaptable square box */
 .service {
   background-color: #fff;
   padding: 1rem;
   border-radius: 0px 30px 30px 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   
-  /* Make the box square */
+  /* Force a square shape that scales with its grid cell */
   aspect-ratio: 1 / 1;
   
-  /* Center content inside the square */
+  /* Center the content within the square */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,6 +167,7 @@ main {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 
 
 
