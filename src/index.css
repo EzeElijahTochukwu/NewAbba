@@ -241,6 +241,7 @@ main {
 .footer-right {
   text-align: right;
   flex: 1;
+  color:#03C03C;
 }
 
 /* Nav links are vertical on all screen sizes */
