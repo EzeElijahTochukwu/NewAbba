@@ -323,7 +323,21 @@ button:hover {
 .footer-left a{
   color:#03C03C; 
 }
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.8rem;
+}
 
+.social-icons a {
+  color: inherit;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #666;
+}
 /* Nav links are vertical on all screen sizes */
 .footer-links {
   display: flex;
