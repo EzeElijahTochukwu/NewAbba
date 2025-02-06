@@ -23,8 +23,6 @@ const Footer = () => {
             <a href="https://www.facebook.com/profile.php?id=61571762233696&name=xhp_nt__fb__action__open_user">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            
-            
           </div>
         </div>
 
