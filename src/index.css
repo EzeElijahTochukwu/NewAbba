@@ -116,6 +116,46 @@ main {
   /* Remove the fixed aspect ratio so the box adapts to its content */
   /* Instead of aspect-ratio, we let the content determine the height */
   
+  /* Container for the whole services section */
+.services {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px 20px 5px;
+  max-width: 1200px; /* Limits the width on larger screens */
+}
+
+/* Our Services heading */
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Grid container for service items */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+  gap: 1rem;
+}
+
+/* For mobile screens, use two columns */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Individual service item that adapts its height to the text content */
+.service {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0px 30px 30px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  /* Remove the fixed aspect ratio so the box adapts to its content */
+  /* Instead of aspect-ratio, we let the content determine the height */
+  
   /* Optional: Use flexbox to vertically center content if desired */
   display: flex;
   flex-direction: column;
@@ -133,9 +173,8 @@ main {
 .service p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-}
-
-
+  }
+  
 
 
 /* Blog Styles */
