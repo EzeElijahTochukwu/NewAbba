@@ -250,6 +250,9 @@ main {
   align-items: flex-end;
   gap: 0.5rem;
 }
+.footer-links a{
+  color:#03C03C;
+}
 
 /* Center Logo */
 .footer-logo-container {
