@@ -149,8 +149,8 @@ main {
 /* Individual service item that adapts its height to the text content */
 .service {
   background-color: #fff;
-  padding: 1rem;
-  border-radius: 0px 30px 30px 0px;
+  padding: 3rem;
+  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   
   /* Remove the fixed aspect ratio so the box adapts to its content */
