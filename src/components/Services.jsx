@@ -8,13 +8,13 @@ const Services = () => {
         <div className="service">
           <h3>Content Writing</h3>
           <p>
-            we help you write content that connects with your audience and builds trust
+            we help you write content that connects with your audience and builds trust.
           </p>
         </div>
         <div className="service">
           <h3>Copywriting</h3>
           <p>
-            Copywriting: we help you craft compelling SEO copies that converts and sells
+            Copywriting: we help you craft compelling SEO copies that converts and sells.
           </p>
         </div>
         <div className="service">
@@ -32,13 +32,13 @@ const Services = () => {
         <div className="service">
           <h3>Academic Writing Consultancy</h3>
           <p>
-            We guide you in enhancing academic projects to ensure scholarly success
+            We guide you in enhancing academic projects to ensure scholarly success.
           </p>
         </div>
         <div className="service">
           <h3>Contracts and Agreement Drafting</h3>
           <p>
-          we help you review documents to protect your interests and draft legally sound agreements
+          we help you review documents to protect your interests and draft legally sound agreements.
           </p>
         </div>
       </div>
