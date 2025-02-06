@@ -64,18 +64,29 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  padding: 10px;
+  background: #fff; /* Add a background for visibility */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for subtle depth */
+  border-radius: 10px; /* Optional: for rounded corners */
 }
 
 .nav-links {
   display: flex;
   gap: 20px;
+  padding: 10px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #03C03C;
+  font-weight: bold; /* Make text bold */
+  padding: 8px 12px;
 }
+
+.nav-links a:hover {
+  color: #028a2f; /* Slightly darker green on hover */
+}
+
 
 /* Hamburger menu styles */
 .hamburger-menu {
