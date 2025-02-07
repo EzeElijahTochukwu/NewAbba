@@ -313,9 +313,10 @@ button:hover {
 .footer-left {
   text-align: left;
   flex: 1;
+  margin-top:1rem;
 }
 .footer-left h4{
-  marging-top:3rem;
+  marging-bottom:1rem;
 
 }
 
