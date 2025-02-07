@@ -314,6 +314,9 @@ button:hover {
   text-align: left;
   flex: 1;
 }
+.footer-left yes{
+  marging-top:0.5rem;
+}
 
 .footer-right {
   text-align: right;
