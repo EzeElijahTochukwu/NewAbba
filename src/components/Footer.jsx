@@ -14,7 +14,7 @@ const Footer = () => {
             <i className="fab fa-linkedin"></i> YesAbba Writes
           </a></p>
           
-          <h3 className="yes">yesabbawrites</h3>
+          <h4>yesabbawrites</h4>
           <div className="social-icons">
             <a href="https://www.instagram.com/yesabbawrites?igsh=MTc5c2d1ZWtwNjB3Zw==" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
