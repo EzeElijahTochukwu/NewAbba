@@ -325,9 +325,10 @@ button:hover {
 }
 .social-icons {
   display: flex;
-  gap: 1rem;
-  margin-top: 0.3rem;
+  gap: 0.5rem; /* Reduce gap if needed */
+  margin-top: 0rem; /* Remove extra space */
 }
+
 
 .social-icons a {
   color: inherit;
