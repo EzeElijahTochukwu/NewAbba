@@ -315,10 +315,7 @@ button:hover {
   flex: 1;
   margin-top:1rem;
 }
-.footer-left h4{
-  marging-bottom:1rem;
 
-}
 
 .footer-right {
   text-align: right;
@@ -331,8 +328,8 @@ button:hover {
 .social-icons {
   display: flex;
   gap: 0.3rem; /* Reduce gap if needed */
-  margin: 0rem; /* Remove extra space */
-  padding-bottom:1rem;
+  margin: 0; /* Remove extra space */
+
 }
 
 
