@@ -325,7 +325,7 @@ button:hover {
 }
 .social-icons {
   display: flex;
-  gap: 0.5rem; /* Reduce gap if needed */
+  gap: 0.3rem; /* Reduce gap if needed */
   margin-top: 0rem; /* Remove extra space */
 }
 
