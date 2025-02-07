@@ -332,6 +332,7 @@ button:hover {
   display: flex;
   gap: 0.3rem; /* Reduce gap if needed */
   margin-top: 0rem; /* Remove extra space */
+  padding-bottom:1rem;
 }
 
 
