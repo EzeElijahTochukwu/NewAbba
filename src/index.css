@@ -315,7 +315,8 @@ button:hover {
   flex: 1;
 }
 .footer-left yes{
-  marging-top:0.5rem;
+  marging-top: 1rem;
+  margin-bottom:0rem;
 }
 
 .footer-right {
