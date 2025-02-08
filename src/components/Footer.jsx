@@ -15,7 +15,7 @@ const Footer = () => {
           </a></p>
           
           <div className="brand-social">
-  <h4 className="brand-name">yesabbawrites</h4>
+  <h4 className="brand-name">yesabbawrites :</h4>
   <div className="social-icons">
     <a href="https://www.instagram.com/yesabbawrites" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-instagram"></i>
