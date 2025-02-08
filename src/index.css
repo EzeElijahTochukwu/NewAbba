@@ -325,23 +325,33 @@ button:hover {
 .footer-left a{
   color:#03C03C; 
 }
-.social-icons {
+.brand-social {
   display: flex;
-  gap: 0.3rem; /* Reduce gap if needed */
-  margin: 0; /* Remove extra space */
-
+  align-items: center;
+  gap: 10px; /* Adjust spacing between text and icons */
+  margin-top: 1rem;
 }
 
+.brand-name {
+  font-weight: bold;
+  color: brown;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.4rem; /* Reduce spacing between icons */
+}
 
 .social-icons a {
   color: inherit;
-  font-size: 1.8rem;
+  font-size: 1.3rem; /* Reduce icon size */
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
   color: #666;
 }
+
 /* Nav links are vertical on all screen sizes */
 .footer-links {
   display: flex;
