@@ -14,21 +14,24 @@ const Footer = () => {
             <i className="fab fa-linkedin"></i> YesAbba Writes
           </a></p>
           
-          <h4>yesabbawrites</h4>
-          <div className="social-icons">
-            <a href="https://www.instagram.com/yesabbawrites?igsh=MTc5c2d1ZWtwNjB3Zw==" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
-            </a>
-              <a href="https://www.threads.net/@yesabbawrites" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-threads"></i>
-            </a>
-            <a href="https://www.pinterest.com/Yesabbawrites/" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-pinterest"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61571762233696&name=xhp_nt__fb__action__open_user" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook"></i>
-              </a>
-          </div>
+          <div className="brand-social">
+  <h4 className="brand-name">yesabbawrites</h4>
+  <div className="social-icons">
+    <a href="https://www.instagram.com/yesabbawrites" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.threads.net/@yesabbawrites" target="_blank" rel="noopener noreferrer">
+      <i className="fa-brands fa-threads"></i>
+    </a>
+    <a href="https://www.pinterest.com/Yesabbawrites/" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-pinterest"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61571762233696" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-facebook"></i>
+    </a>
+  </div>
+</div>
+
             
         </div>
 
