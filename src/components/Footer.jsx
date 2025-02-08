@@ -24,6 +24,7 @@ const Footer = () => {
             </a>
             <a href="https://www.facebook.com/profile.php?id=61571762233696&name=xhp_nt__fb__action__open_user" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook"></i>
+              </a>
               <a href="https://www.facebook.com/profile.php?id=61571762233696&name=xhp_nt__fb__action__open_user" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-threads"></i>
             </a>
