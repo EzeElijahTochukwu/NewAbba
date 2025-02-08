@@ -328,6 +328,7 @@ color: #7B3F00
   color:#03C03C; 
 }
 .brand-social {
+.brand-social {
   display: flex;
   align-items: center;
   gap: 10px; /* Adjust spacing between text and icons */
@@ -336,13 +337,15 @@ color: #7B3F00
 
 .brand-name {
   font-weight: bold;
-  color:#03C03C;
+  color: #03C03C;
+  margin-left: 10px; /* Optional: add margin to prevent tight spacing */
 }
 
 .social-icons {
   display: flex;
   gap: 0.4rem; /* Reduce spacing between icons */
 }
+
 
 .social-icons a {
   color: inherit;
