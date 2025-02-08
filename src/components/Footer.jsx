@@ -26,7 +26,7 @@ const Footer = () => {
               <i className="fab fa-facebook"></i>
               </a>
               <a href="https://www.threads.net/@yesabbawrites" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-square-threads"></i>
+              <i className="fa-brands fa-threads"></i>
             </a>
           </div>
             
