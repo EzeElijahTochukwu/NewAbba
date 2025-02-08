@@ -14,7 +14,7 @@ const Footer = () => {
             <i className="fab fa-linkedin"></i> YesAbba Writes
           </a></p>
           
-          <h4>yesabbawrites
+          <h4>yesabbawrites</h4>
           <div className="social-icons">
             <a href="https://www.instagram.com/yesabbawrites?igsh=MTc5c2d1ZWtwNjB3Zw==" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
@@ -24,9 +24,11 @@ const Footer = () => {
             </a>
             <a href="https://www.facebook.com/profile.php?id=61571762233696&name=xhp_nt__fb__action__open_user" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook"></i>
+              <a href="https://www.facebook.com/profile.php?id=61571762233696&name=xhp_nt__fb__action__open_user" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-threads"></i>
             </a>
           </div>
-            </h4>
+            
         </div>
 
         {/* Right Section - Navigation Links */}
