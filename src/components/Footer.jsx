@@ -26,7 +26,7 @@ const Footer = () => {
               <i className="fab fa-facebook"></i>
             </a>
           </div>
-            </h4>>
+            </h4>
         </div>
 
         {/* Right Section - Navigation Links */}
